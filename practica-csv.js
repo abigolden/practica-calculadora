@@ -48,18 +48,19 @@ class calculadoraDeDosNumeros {
 
 
   const calculadora = new calculadoraDeDosNumeros(2, 4);
-    calculadora.sumar()
-    calculadora.imprimir() // 6
+    
+  calculadora.imprimir() // 6
+  calculadora.sumar()
+  
+  calculadora.restar()
+  calculadora.imprimir() // -2
 
-    calculadora.restar()
-    calculadora.imprimir() // -2
+  calculadora.multiplicar()
+  calculadora.imprimir() // 8
 
-    calculadora.multiplicar()
-    calculadora.imprimir() // 8
+  calculadora.dividir()
+  calculadora.imprimir() // 0.5
 
-    calculadora.dividir()
-    calculadora.imprimir() // 0.5
-
-    console.log(calculadora.obtenerPrimerOperando()); // 2
-    console.log(calculadora.obtenerSegundoOperando()); // 4
+  console.log(calculadora.obtenerPrimerOperando()); // 2
+  console.log(calculadora.obtenerSegundoOperando()); // 4
 
