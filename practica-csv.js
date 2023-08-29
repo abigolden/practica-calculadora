@@ -16,17 +16,18 @@ class calculadoraDeDosNumeros {
   constructor(primerOperando, segundoOperando) {
     this.primerOperando = primerOperando;
     this.segundoOperando = segundoOperando;
-    this.resultado = null; 
+    this.resultado = 0;
   }
   imprimir() {
-    if (this.resultado !== null) {
+    if (this.resultado !== 0) {
       console.log(this.resultado);
+    } else {
+      console.log(0);
     }
   }
   sumar() {
     this.resultado = this.primerOperando + this.segundoOperando;
   }
-
   restar() {
     this.resultado = this.primerOperando - this.segundoOperando;
   }
@@ -44,23 +45,25 @@ class calculadoraDeDosNumeros {
     return this.segundoOperando;
   }
 }
- 
 
 
-  const calculadora = new calculadoraDeDosNumeros(2, 4);
+const calculadora = new calculadoraDeDosNumeros(2, 4);
     
-  calculadora.imprimir() // 6
-  calculadora.sumar()
-  
-  calculadora.restar()
-  calculadora.imprimir() // -2
+calculadora.imprimir() // 0
 
-  calculadora.multiplicar()
-  calculadora.imprimir() // 8
+calculadora.sumar()
+calculadora.imprimir() // 6
 
-  calculadora.dividir()
-  calculadora.imprimir() // 0.5
+calculadora.restar()
+calculadora.imprimir() // -2
 
-  console.log(calculadora.obtenerPrimerOperando()); // 2
-  console.log(calculadora.obtenerSegundoOperando()); // 4
+calculadora.multiplicar()
+calculadora.imprimir() // 8
+
+calculadora.dividir()
+calculadora.imprimir() // 0.5
+
+console.log(calculadora.obtenerPrimerOperando()); // 2
+console.log(calculadora.obtenerSegundoOperando()); // 4
+
 
